@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/kanyeicon.png"/>
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Kanye West Fan Club</title>
+    <script src="https://kit.fontawesome.com/7d69dd9cc7.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2C5RKP854"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R2C5RKP854');
+</script>
+<script src="https://kit.fontawesome.com/7d69dd9cc7.js" crossorigin="anonymous"></script>
+
+
+</head>
+<!-- All of the visible code in the page belongs in the body tag -->
+<body>
+    <a class="skip-main" href="#main">Skip to content</a>	
+	<!-- Header is a sematic tag page that aids readability -->
+	<header>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+			<ul>
+				<!-- Since I am on the index file I added class = action to the link to index. -->
+				<li><a href = "index.html" >About</a></li>
+				<li><a href = "music.html">Music</a></li>
+				<li><a href = "shoes.html">Shoes</a></li>
+				<li><a href = "clothing.html">Clothing</a></li>
+                <li class="active"><a href = "contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- The h1 is a semantic tag that aids accessibility -->
+		<h1>Contact Me</h1>
+	</header>
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main>
+
+		<img src = "images/kanyeanimated.jpg" width="200" alt="Kanye West animated head picture" id="contact-img"/>
+
+		<p> Interested in joining a community that appreciates similar music? Fill out the form below to stay connected! </p>
+
+        <form action="contactform.html" method="POST">
+            <label for="name"> Name</label>
+            <input type = "text" name = "text" id = "name"value = "Last Name, First Name">
+            <label for="email"> Email</label>
+            <input type = "email" name = "email" id = "email"value = "email@example.com">
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <label for="message"> Message</label>
+            <textarea id = "message" name = "message" rows = "5" cols = "30"></textarea>
+            <form>
+              <input type="submit" value="Submit">
+            </form>
+        
+        </form>
+		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
+		
+	</main>
+
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<p> 
+			Priya Sam &copy; 2022 <i class="fa-solid fa-envelope"></i> priyasam@umich.edu
+		</p>
+	</footer>
+</body>
+</html>
